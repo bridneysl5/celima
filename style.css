@@ -90,6 +90,12 @@ button {
   cursor: pointer;
 }
 
+.boton-baño {
+  text-decoration: none;
+  color: #676766;
+  background-color: white;
+  border: none;
+}
 #popUpBox {
   width: 50%;
   overflow: hidden;
@@ -175,4 +181,25 @@ input {
   input {
     font-size: 12px;
   }
+}
+
+.baño-img {
+  width: 80%;
+  height: 80%;
+}
+.baño-section {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.cerrar {
+  position: absolute;
+  top: 2%;
+  left: 85%;
+ l
 }
