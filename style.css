@@ -29,6 +29,7 @@ body {
 
 .logos {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 .form {
@@ -118,4 +119,60 @@ input {
 .buttonSend {
   background-color: #41bfd8;
   color: white;
+}
+@media only screen and (max-width: 800px) {
+  .firstForm {
+    width: 90%;
+    height: 70%;
+  }
+  input {
+    padding: 1%;
+
+    border: none;
+    margin-top: 6%;
+    font-size: 14px;
+  }
+  .logos {
+    margin-top: 5%;
+    display: flex;
+
+    margin-bottom: 5%;
+  }
+  .secondForm {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px;
+    width: 90%;
+    min-height: 100%;
+    min-height: 50%;
+  }
+  .containerAmbientes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstForm {
+    padding: 0;
+    width: 70%;
+    height: 70%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgForm {
+    height: 100%;
+    width: 100%;
+  }
+  form {
+    margin: 0;
+
+    margin-bottom: 5%;
+  }
+  input {
+    font-size: 12px;
+  }
 }
