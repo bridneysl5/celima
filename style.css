@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.containerForm {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("img/fondo\ web.png");
+}
+.firstForm {
+  width: 50%;
+  height: 70%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.logos {
+  display: flex;
+  margin-bottom: 50px;
+}
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.imgForm {
+  background: url("img/banner-celima-trebol-web-19.04.22-3.png-modif.png")
+    no-repeat center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+
+.containerAmbientes {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("img/fondo\ web.png");
+}
+
+.secondForm {
+  padding: 0;
+  width: 45%;
+  height: 70%;
+  background-color: white;
+  color: #676766;
+}
+.contenedorImg {
+  margin: 2%;
+}
+.img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+button {
+  margin-top: 1%;
+  background-color: #d0eff4;
+  border: none;
+  padding: 1% 3% 1% 3%;
+  color: #5abaca;
+  cursor: pointer;
+}
+
+#popUpBox {
+  width: 50%;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 1%;
+  text-align: center;
+  display: none;
+}
+
+input {
+  padding: 4% 10% 4% 10%;
+  border: none;
+  margin-top: 6%;
+  font-size: 18px;
+}
+::placeholder {
+  color: #8f9da5;
+  font-size: 1em;
+}
+
+.buttonSend {
+  background-color: #41bfd8;
+  color: white;
+}

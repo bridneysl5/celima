@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="containerForm">
+      <section class="firstForm">
+        <section class="form">
+          <section class="logos">
+            <img
+              src="img/biotech-logo-institucional-celima-landing.png"
+              alt=""
+              style="max-width: 30%; max-height: 30%"
+            />
+            <img
+              src="img/logo-trebol-instalador-profesional-celima-trebol.png"
+              alt=""
+              style="max-width: 30%; max-height: 30%"
+            />
+          </section>
+          <h3>Bienvenido al Simulador</h3>
+          <form id="form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nombre"
+            /><br />
+
+            <input
+              type="text"
+              name="mail"
+              id="mail"
+              placeholder="Correo Electronico"
+            /><br />
+            <input
+              name="ciudad"
+              type="text"
+              placeholder="Ciudad"
+              id="ciudad"
+            /><br />
+            <input
+              type="submit"
+              class="buttonSend"
+              id="button"
+              value="Suscribirse"
+            />
+          </form>
+          <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+          ></script>
+
+          <script type="text/javascript">
+            emailjs.init("2FkjgPACobKCJQOyX");
+          </script>
+        </section>
+        <section class="imgForm"></section>
+      </section>
+    </section>
+  </body>
+  <script>
+    const btn = document.getElementById("button");
+
+    document
+      .getElementById("form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        btn.value = "Enviando...";
+
+        const serviceID = "default_service";
+        const templateID = "template_v5ds8al";
+
+        emailjs.sendForm(serviceID, templateID, this).then(
+          () => {
+            btn.value = "Suscribirse";
+            btn = window.open("/ambientes.html");
+            alert("Sent!");
+          },
+          (err) => {
+            btn.value = "Suscribirse";
+            alert(JSON.stringify(err));
+          }
+        );
+      });
+  </script>
+</html>
